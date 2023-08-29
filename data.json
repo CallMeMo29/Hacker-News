@@ -2,14 +2,14 @@
     {
       "id": 1,
       "fullname": "Alfi",
-      "avatar": "src/bild(1).jpg",
+      "avatar": "src/eins.jpg",
       "description": "Das ist irgend ein Bescheuerter Text",
       "profession": "DeppVomDienst"
     },
     {
       "id": 2,
       "fullname": "Volker",
-      "avatar": "src/bild(2).jpg",
+      "avatar": "src/zwei.jpg",
       "description": "Das ist irgend ein Bescheuerter Text",
       "profession": "Lügner"
     },
