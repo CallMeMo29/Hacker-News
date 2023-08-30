@@ -84,3 +84,27 @@ body {
 .first-bar li:last-child::after {
   content: none;
 }
+
+// /* Mos */
+
+.FB {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+}
+
+.fo-bar {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100vw;
+  list-style: decimal;
+}
