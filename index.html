@@ -21,7 +21,7 @@
     href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
   />
   </head>
-  <body>
+  <body onload="loadTime()">
     <div class="container">
       <!-- Anh -->
       <nav>
@@ -45,7 +45,7 @@
                 <li><a href="#">show</a></li>
                 <li><a href="#">jobs</a></li>
                 <li><a href="#">submit</a></li>
-                <li><div>DATE</div></li>
+                <li><div id="updated-date"></div></li>
               </ul>
             </div>
           </div>
@@ -80,5 +80,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script src="date.js"></script>
   </body>
 </html>
