@@ -1,9 +1,15 @@
+/* Farbe für Header:  #FF6600*/
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.container {
+#pics {
+    width: 100px;
+    height: 120px;
+}
+.container{
   width: 100vw;
   height: 1000px;
   margin-left: auto;
@@ -84,3 +90,4 @@ body {
 .first-bar li:last-child::after {
   content: none;
 }
+
