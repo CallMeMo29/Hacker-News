@@ -4,25 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hacker News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="https://news.ycombinator.com/y18.svg">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/svg"
-      href="https://news.ycombinator.com/y18.svg"
-    />
+      href="https://news.ycombinator.com/y18.svg"  />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Quicksand:wght@300;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap"
-      rel="stylesheet"
-    />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-  />
+      rel="stylesheet"/>
   </head>
-  <body onload="loadTime()">
-    <div class="container">
+  <body class="container">
+    <div>
       <!-- Anh -->
       <nav>
         <div id="header-bar">
@@ -45,41 +44,39 @@
                 <li><a href="#">show</a></li>
                 <li><a href="#">jobs</a></li>
                 <li><a href="#">submit</a></li>
-                <li><div id="updated-date"></div></li>
+                <li><div>DATE</div></li>
               </ul>
             </div>
           </div>
           <div id="login-area"><a href="#">login</a></div>
         </div>
       </nav>
-        <main>
-            <!-- API Einbindung -->
-            <template id="userCardTemplate">
-                <figure class="flex bg-gray-100 rounded-x1 overflow-hidden mb-4">
-                  <img id="pics" src="#" class="w-48 h-auto" />
-                  <div class="p-8 space-y-4">
-                    <p class="font-medium text-lg description"></p>
-                    <figcaption class="font-medium text-lg">
-                      <div class="text-cyan-600 fullname"></div>
-                      <div class="text-gray-500 profession"></div>
-                    </figcaption>
-                  </div>
-                </figure>
-              </template>
-              <div id="users"></div>
-              <script src="script.js"></script>
-        </main>
 
-        <footer>
-            <!-- Footer -->
-        </footer>
+      <main>
+          <!-- API Einbindung -->
+          <template id="userCardTemplate">
+              <figure id="box1" class="flex bg-yellow-100 rounded-x1 overflow-hidden mb-4">
+                <img id="pics" src="#" class="w-48 h-auto" />
+                <div class="p-8 space-y-4">
+                  <p class="font-medium text-lg description"></p>
+                  <figcaption class="font-medium text-lg">
+                    <div class="text-cyan-600 fullname"></div>
+                    <div class="text-gray-500 profession"></div>
+                  </figcaption>
+                </div>
+              </figure>
+            </template>
+            <div id="users"></div>
+            <script src="script.js"></script>
+      </main>
 
+      <footer>
+        <!-- Footer -->
+      </footer>
     </div>
     <script
       src="https://kit.fontawesome.com/dbf8a03f8b.js"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
-    <script src="date.js"></script>
   </body>
 </html>
