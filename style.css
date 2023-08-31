@@ -1,4 +1,5 @@
 /* Farbe für Header:  #FF6600*/
+/* Farbe Container background: #f6f6ef; */
 
 * {
   margin: 0;
@@ -6,15 +7,27 @@
 }
 
 #pics {
-    width: 100px;
-    height: 120px;
+    object-fit: cover;
+    width: 200px;
+    max-height: 200px;
+    padding-left: 25px;
 }
-.container{
+
+#box1 {
+    height: 200px;
+    margin-top: 16px;
+}
+
+#userCardTemplate {
+    padding-top: 10px;
+}
+
+.container {
   width: 100vw;
   height: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background: gray;
+  background: #f6f6ef;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -90,4 +103,3 @@ body {
 .first-bar li:last-child::after {
   content: none;
 }
-

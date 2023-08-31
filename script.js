@@ -4,19 +4,19 @@
 
 
 fetch("data.json")
-  .then((response) => {
-    return response.json();
+  .then((antwortvondatajson) => {
+    return antwortvondatajson.json();
   })
-  .then((users) => {
+  .then((alleusersdatenausdatajson) => {
     const container = document.getElementById("users");
-    users.forEach((user) => {
+    alleusersdatenausdatajson.forEach((ergeabnisderforeache) => {
       const tmpl = document
         .getElementById("userCardTemplate")
         .content.cloneNode(true);
-      tmpl.querySelector(".fullname").innerText = user.fullname;
-      tmpl.querySelector(".profession").innerText = user.profession;
-      tmpl.querySelector(".description").innerText = user.description;
-      tmpl.querySelector("img").setAttribute("src", user.avatar);
+      tmpl.querySelector(".fullname").innerText = ergeabnisderforeache.fullname;
+      tmpl.querySelector(".profession").innerText = ergeabnisderforeache.profession;
+      tmpl.querySelector(".description").innerText = ergeabnisderforeache.description;
+      tmpl.querySelector("img").setAttribute("src", ergeabnisderforeache.avatar);
       container.appendChild(tmpl);
     });
   });
